@@ -15,11 +15,45 @@ body {
   justify-content: center;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 9px;
+  align-items: flex-start;
+  padding: 18px;
+  margin-left: 0px;
+  flex-grow: 1;
+}
+
 .modal {
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.text {
+  font-size: 15px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  gap: 53px;
+}
+
+.bottom {
+  display: flex;
+  gap: 5px;
+
 }
 
 .icon {
@@ -33,6 +67,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 17px 10px 0px 10px;
+  flex-shrink: 0;
+}
+
+.text {
+  flex-wrap: nowrap;
 }
 
 .close-button {
